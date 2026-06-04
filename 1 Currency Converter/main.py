@@ -24,7 +24,7 @@ from_rate = get_rate(from_currency, rates)
 to_rate = get_rate(to_currency, rates)
 
 if from_rate is None or to_rate is None:
-    print("❌ Invalid currency!") 
+    print("Invalid currency!") 
 else:
     converted = amount * (from_rate / to_rate)
     print("\n" + "-"*35)
